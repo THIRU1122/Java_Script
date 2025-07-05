@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student Object Info</h2>
+<div id="output"></div>
+
+<script>
+  const student = {
+    name: "THIRU",
+    age: 21,
+    gender: "Male",
+    course: "Java fullstack development"
+  };
+
+  const keys = Object.keys(student);
+  const values = Object.values(student);
+  const entries = Object.entries(student);
+
+  document.getElementById("output").innerHTML =
+    "<b>Keys:</b> " + keys.join(", ") + "<br>" +
+    "<b>Values:</b> " + values.join(", ") + "<br>" +
+    "<b>Entries:</b> <br>" + entries.map(entry => entry.join(": ")).join("<br>");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<script>
+
+
+function countDigits(number) {
+
+    if(number === 0){
+        
+        return 1;
+    }
+
+    let count = 0;
+    let num = Math.abs(number);
+
+    while (num > 0){
+
+        num = Math.floor(num / 10);
+        count++;
+    }
+
+    return count;
+
+ 
+}
+let userInput = prompt("enter the number to get how many digits");
+
+let counteddigit = Number(countDigits(userInput));
+
+console.log(counteddigit);
+
+alert("counted digit is "+"="+counteddigit);
+</script>

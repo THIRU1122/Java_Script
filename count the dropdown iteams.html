@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="mySelect">
+        <option>india</option>
+         <option>news land</option>
+          <option>england</option>
+           <option>us</option>
+            <option>goa</option>
+             <option>TAMIL NADU</option>
+    </select>
+
+    <input type="button" onclick="getOptions()" value="Count and Output all items">
+
+    <script>
+        function getOptions() {
+            let x =document.getElementById("mySelect");
+            let length = x.length;
+            alert("Total items" + length);
+
+        }
+
+    </script>
+   
+
+    
+</body>
+</html>
